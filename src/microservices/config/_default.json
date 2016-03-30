@@ -1,0 +1,14 @@
+{
+    "services": {
+        "config": {
+            "type": "tcp",
+            "host": "localhost",
+            "port": "4000"
+        }
+    },
+    "environments": {
+        "dev": { },
+        "test": { },
+        "live": { }
+    }
+}

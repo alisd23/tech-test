@@ -1,0 +1,37 @@
+{
+    "services": {
+        "config": {
+            "type": "tcp",
+            "host": "localhost",
+            "port": "4000"
+        },
+        "orderBook": {
+            "type": "tcp",
+            "host": "localhost",
+            "port": "4001"
+        }
+    },
+    "environments": {
+        "dev": {
+            "services": {
+                "orderBook": {
+                    "port": "4101"
+                }
+            }
+        },
+        "test": {
+            "services": {
+                "orderBook": {
+                    "port": "4201"
+                }
+            }
+        },
+        "live": {
+            "services": {
+                "orderBook": {
+                    "port": "4301"
+                }
+            }
+        }
+    }
+}
